@@ -80,6 +80,8 @@ python3 cognito_brute_final_safe.py <client_id> <client_secret> -u users.txt -p 
 ```
 
 ### ✅ **JSON Output (`results.json`) Example:**
+> [!IMPORTANT]  
+> I may change this to NDJSON and allow for file output but I am unsure how feasible this tool is yet
 ```json
 [
   {
@@ -123,15 +125,15 @@ Example:
 ---
 
 ## ⚠ AWS Cognito Edge Cases
-- **UserNotConfirmedException**: Valid credentials but user never confirmed email/phone. \
-- **NotAuthorizedException**: Bad password or locked account. \
+- **UserNotConfirmedException**: Valid credentials but user never confirmed email/phone.
+- **NotAuthorizedException**: Bad password or locked account. 
 - **Rate Limit**: AWS Cognito stops processing after multiple bad attempts. Handled cleanly.
 
 ---
 
 ## 📌 Real World Usage Tip
-- Run this on targets using **AWS Amplify, Cognito Auth** \
-- Look for JS references to `AmazonCognitoIdentity`, `AWS.config.credentials`, or `new CognitoUser()` \
+- Run this on targets using **AWS Amplify, Cognito Auth** 
+- Look for JS references to `AmazonCognitoIdentity`, `AWS.config.credentials`, or `new CognitoUser()` 
 - Works great during bug bounty token extraction tests
 
 ---
