@@ -104,19 +104,19 @@ python3 cognito_brute_final_safe.py <client_id> <client_secret> -u users.txt -p 
 ---
 
 ## 🚀 Features
-✅ Multi-threaded for high speed
-✅ **Region locking** (stops testing other regions once correct one found)
-✅ **Rate-limiting detection** (stops retesting locked users)
-✅ Stops brute-forcing after first valid/unconfirmed hit per user
-✅ JSON output (`results.json`)
+✅ Multi-threaded for high speed \
+✅ **Region locking** (stops testing other regions once correct one found) \
+✅ **Rate-limiting detection** (stops retesting locked users) \
+✅ Stops brute-forcing after first valid/unconfirmed hit per user \
+✅ JSON output (`results.json`) \
 ✅ Combo or user/pass mode
 
 ---
 
 ## ❌ Rate Limiting Behavior
-✅ The tool prints "[🚨 RATE LIMITED]" **once per user**
-✅ Immediately stops testing that user
-✅ Continues testing remaining users
+✅ The tool prints "[🚨 RATE LIMITED]" **once per user** \
+✅ Immediately stops testing that user \
+✅ Continues testing remaining users 
 
 Example:
 ```
@@ -126,24 +126,24 @@ Example:
 ---
 
 ## ⚠ AWS Cognito Edge Cases
-- **UserNotConfirmedException**: Valid credentials but user never confirmed email/phone.
-- **NotAuthorizedException**: Bad password or locked account.
+- **UserNotConfirmedException**: Valid credentials but user never confirmed email/phone. \
+- **NotAuthorizedException**: Bad password or locked account. \
 - **Rate Limit**: AWS Cognito stops processing after multiple bad attempts. Handled cleanly.
 
 ---
 
 ## 📌 Real World Usage Tip
-- Run this on targets using **AWS Amplify, Cognito Auth**
-- Look for JS references to `AmazonCognitoIdentity`, `AWS.config.credentials`, or `new CognitoUser()`
+- Run this on targets using **AWS Amplify, Cognito Auth** \
+- Look for JS references to `AmazonCognitoIdentity`, `AWS.config.credentials`, or `new CognitoUser()` \
 - Works great during bug bounty token extraction tests
 
 ---
 
 ## 💣 Future Enhancements (if needed)
-✅ Retry logic
-✅ Export `rate_limited_users` list
-✅ Multiprocessing mode
-✅ Auto-confirm unconfirmed users (if possible)
+✅ Retry logic \
+✅ Export `rate_limited_users` list \
+✅ Multiprocessing mode \
+✅ Auto-confirm unconfirmed users (if possible) 
 
 ---
 
