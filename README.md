@@ -6,10 +6,10 @@ This tool is designed for **penetration testers**, **red teamers**, and **bug bo
 
 The script supports:
 ✅ Multi-threaded operation \
-✅ Region discovery and locking
-✅ AWS Cognito rate-limit detection (no redundant prints)
-✅ Success and "unconfirmed" handling
-✅ JSON output
+✅ Region discovery and locking \
+✅ AWS Cognito rate-limit detection (no redundant prints) \
+✅ Success and "unconfirmed" handling \
+✅ JSON output \
 ✅ Hacker color-coded console output
 
 ---
