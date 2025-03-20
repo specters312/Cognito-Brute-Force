@@ -1,6 +1,3 @@
-
-# 🔥 Cognito Brute Forcer - README
-
 ## 📖 Overview
 This tool is designed for **penetration testers**, **red teamers**, and **bug bounty hunters** targeting AWS Cognito applications. It allows you to brute force username/password combinations against a Cognito User Pool.
 
